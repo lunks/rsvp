@@ -1,3 +1,4 @@
+gem "bundler", "0.9.20"
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0.beta3'
