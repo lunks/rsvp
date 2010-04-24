@@ -1,0 +1,20 @@
+<% title "Answers" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Invite</th>
+    <th>Guests</th>
+  </tr>
+  <% for answer in @answers %>
+    <tr>
+      <td><%= answer.name %></td>
+      <td><%= answer.email %></td>
+      <td><%= answer.invite %></td>
+      <td><%= answer.guests %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Answer", new_answer_path %></p>

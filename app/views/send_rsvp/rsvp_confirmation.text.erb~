@@ -1,0 +1,6 @@
+<%= "#{@answer.name} respondeu ao RSVP. Ele levará #{@answer.guests} convidados. " %>
+<% if @answer.invite then%>
+<%= "#{@answer.name} respondeu ao RSVP. Ele levará #{@answer.guests} convidados. " %>
+<% else -%>
+<%= "#{@answer.name} não comparecerá ao evento." %>
+<% end -%>

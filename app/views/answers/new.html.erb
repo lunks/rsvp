@@ -1,0 +1,24 @@
+Nós, Vanelli e Ari, desejamos muito que você compareça às nossas Bodas de Prata. Pedimos que confirme a participação, ou em caso de não poder comparecer, que marque 'Não' no local indicado.
+
+<% title "RSVP para Bodas de Vanelli e Ari" %>
+
+<%= form_for @answer do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label 'Nome' %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label 'E-mail' %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label 'Comparecerá ao evento?' %><br />
+    <%= f.radio_button :invite, 1 %> Sim     <%= f.radio_button :invite, 0 %> Não
+  </p>
+  <p>
+    <%= f.label 'Número de convidados' %><br />
+    <%= f.text_field :guests %>
+  </p>
+  <p><%= f.submit 'Enviar RSVP'%></p>
+<% end %>
